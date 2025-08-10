@@ -13,7 +13,7 @@ size = Vector2(205.75, 652)
 script = ExtResource("1_fj7yv")
 
 [node name="Player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(517, 74)
+position = Vector2(542, 9)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -31,6 +31,6 @@ shape = SubResource("RectangleShape2D_tlwt5")
 
 [node name="Panel" type="Panel" parent="."]
 offset_left = 94.0
-offset_top = 412.0
+offset_top = 417.0
 offset_right = 1077.0
-offset_bottom = 741.0
+offset_bottom = 746.0
