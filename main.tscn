@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://6mrnn85qtmeq"]
+[gd_scene load_steps=3 format=3 uid="uid://6mrnn85qtmeq"]
+
+[ext_resource type="PackedScene" uid="uid://binxtf6i8dt77" path="res://BG.tscn" id="1_ig7tw"]
 
 [sub_resource type="GDScript" id="GDScript_7dm0k"]
 script/source = "extends Node2D
@@ -33,6 +35,8 @@ tooltip_text = "This is the quit button"
 mouse_default_cursor_shape = 2
 text = "Quit
 "
+
+[node name="BG" parent="." instance=ExtResource("1_ig7tw")]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=3 uid="uid://binxtf6i8dt77"]
+
+[ext_resource type="Script" uid="uid://jqdrnr1nds7b" path="res://bg.gd" id="1_7r6q2"]
+[ext_resource type="Texture2D" uid="uid://8tn0prhi30eg" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/SunnyLand/Layers/back.png" id="1_275co"]
+[ext_resource type="Texture2D" uid="uid://b2vc2rbwd0gri" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/SunnyLand/Layers/middle.png" id="2_vcwcu"]
+[ext_resource type="Texture2D" uid="uid://f6ww7sxtki8x" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/leaves.png" id="3_wfgfm"]
+[ext_resource type="Texture2D" uid="uid://d3mvj8u736vd6" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/branch1.png" id="4_ogskg"]
+[ext_resource type="Texture2D" uid="uid://bs3fkudfp0rna" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/branch2.png" id="5_c2602"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_7r6q2")
+
+[node name="sky" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Back" type="Sprite2D" parent="sky"]
+position = Vector2(576.75, 319.75)
+scale = Vector2(2.99609, 2.66875)
+texture = ExtResource("1_275co")
+
+[node name="branches" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Leaves" type="Sprite2D" parent="branches"]
+position = Vector2(328, 56)
+scale = Vector2(3.78205, 4.15217)
+texture = ExtResource("3_wfgfm")
+
+[node name="Leaves2" type="Sprite2D" parent="branches"]
+position = Vector2(688, 64)
+scale = Vector2(3.78205, 4.15217)
+texture = ExtResource("3_wfgfm")
+
+[node name="Branch1" type="Sprite2D" parent="branches"]
+position = Vector2(512, 40)
+scale = Vector2(2.03191, 2.03191)
+texture = ExtResource("4_ogskg")
+
+[node name="Branch2" type="Sprite2D" parent="branches"]
+position = Vector2(104, 64)
+scale = Vector2(2.01049, 1.97692)
+texture = ExtResource("5_c2602")
+
+[node name="Branch3" type="Sprite2D" parent="branches"]
+position = Vector2(1000, 64)
+scale = Vector2(2.01049, 1.97692)
+texture = ExtResource("5_c2602")
+flip_h = true
+
+[node name="grass" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1208, 0)
+
+[node name="Middle" type="Sprite2D" parent="grass"]
+position = Vector2(113, 476)
+scale = Vector2(1.46591, 1.23913)
+texture = ExtResource("2_vcwcu")
+
+[node name="Middle2" type="Sprite2D" parent="grass"]
+position = Vector2(352, 477)
+scale = Vector2(1.46591, 1.23913)
+texture = ExtResource("2_vcwcu")
+
+[node name="Middle3" type="Sprite2D" parent="grass"]
+position = Vector2(595, 480)
+scale = Vector2(1.46591, 1.23913)
+texture = ExtResource("2_vcwcu")
+
+[node name="Middle4" type="Sprite2D" parent="grass"]
+position = Vector2(834, 481)
+scale = Vector2(1.46591, 1.23913)
+texture = ExtResource("2_vcwcu")
+
+[node name="Middle5" type="Sprite2D" parent="grass"]
+position = Vector2(1063, 483)
+scale = Vector2(1.46591, 1.23913)
+texture = ExtResource("2_vcwcu")
