@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://6mrnn85qtmeq"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 451.0
+offset_top = 181.0
+offset_right = 778.0
+offset_bottom = 295.0
+mouse_default_cursor_shape = 2
+text = "Play
+"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 447.0
+offset_top = 307.0
+offset_right = 782.0
+offset_bottom = 421.0
+tooltip_text = "This is the quit button"
+mouse_default_cursor_shape = 2
+text = "Quit
+"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
