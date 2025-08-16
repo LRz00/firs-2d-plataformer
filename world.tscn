@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d2xq64cief13o"]
+[gd_scene load_steps=14 format=3 uid="uid://d2xq64cief13o"]
 
 [ext_resource type="PackedScene" uid="uid://bpdh44crqs0p4" path="res://player/player.tscn" id="1_f3sb7"]
 [ext_resource type="Script" uid="uid://b5esxk6qwc3ey" path="res://world.gd" id="1_fj7yv"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://f6ww7sxtki8x" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/leaves.png" id="5_ioo17"]
 [ext_resource type="Texture2D" uid="uid://d3mvj8u736vd6" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/branch1.png" id="6_wse8f"]
 [ext_resource type="Texture2D" uid="uid://bs3fkudfp0rna" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Environments/Shadow Forest/Layers/front props/branch2.png" id="7_ic0uy"]
+[ext_resource type="PackedScene" uid="uid://reqkcg8jyuxa" path="res://frog.tscn" id="10_wse8f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ioo17"]
 texture = ExtResource("2_gbfbk")
@@ -278,5 +279,12 @@ scale = Vector2(2.01049, 1.97692)
 texture = ExtResource("7_ic0uy")
 flip_h = true
 
-[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Player" parent="Player" instance=ExtResource("1_f3sb7")]
 position = Vector2(226, 43)
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="Frog" parent="Mobs" instance=ExtResource("10_wse8f")]
+position = Vector2(596, 231)
